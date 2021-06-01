@@ -1,0 +1,100 @@
+body {
+ display: grid;
+ place-content: center;
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: darkgray;
+ background-image: url(../RegistrationFormValidator/img/796444.jpg);
+ padding-top: 100px;
+}
+
+.container {
+  background-color: white;
+  width: 150%;
+  height: 1000px;
+  padding: 75px;
+  border: 5px solid darkgray;
+  border-radius: 4%;
+  box-shadow: 0 15px rgb(204, 184, 184);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/*        inputs           */
+input {
+  width: 75%;
+  height: 50px;
+  border: 5px solid lightgray;
+  padding: 0;
+  font-size: 30px;
+  font-family: inherit;
+  text-align: center;
+}
+
+input:hover {
+  border-color: darkgrey;
+}
+
+label {
+  font-size: 30px;
+  font-style: italic;
+  font-weight:bold;
+  color: rgb(90, 89, 89);
+  
+}
+
+/*      Button        */
+button {
+  background-color: darkgrey;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  width: 76%;
+  height: 60px;
+  font-style: italic;
+  font-size:xx-large;
+  box-shadow: 0 15px rgb(204, 184, 184);
+}
+
+button:hover {
+  background-color: rgb(116, 116, 116);
+  color: white;
+}
+button:active {
+  background-color: rgb(37, 37, 37);
+  color: whitesmoke;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*      Validate inputs         */
+span{
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
+#nameError.visible {
+  display: block;
+}
+input.invalid {
+  border-color: red;
+  
+}
+input.valid {
+  border-color: green;
+}
+
+#showError {
+  color: red;
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+}
